@@ -239,3 +239,22 @@ button:hover {
     margin-top:10px;
 }
 
+/* Button styles */
+button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background-color: rgba(255, 99, 71, 0.7); /* Coral color */
+    color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: rgba(255, 99, 71, 1); /* Darker coral color on hover */
+}
