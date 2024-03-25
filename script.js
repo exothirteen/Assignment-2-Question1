@@ -23,7 +23,7 @@ $(document).ready(function() {
         }
     });
     $("#autocomplete").autocomplete({
-        source: ["Apple", "Banana", "Orange", "Mango", "Pineapple"]
+        source: ["Dog","Cat","Pigeon","Raven", "Horse", "Donkey","Monkey", "Gorilla","Crow","Magpie"]
     });
     $("#datepicker").datepicker();
     $("#slider").slider({
