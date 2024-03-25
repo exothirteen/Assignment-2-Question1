@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery UI Demo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="search-container">
+        <input type="text" id="autocomplete" placeholder="Type here...">
+        <input type="text" id="datepicker" placeholder="Select date...">
+    </div>
+    
+    <div class="box-container">
+        <div class="draggable-box">Drag me</div>
+        <div class="resizable-box">Resize me</div>
+    </div>
+    <div class="droppable droppable-area"><p>Drop here</p></div>
+    <div class="selectable" id="selectable">
+      <p class="selectable-item">Item 1</p>
+      <p class="selectable-item">Item 2</p>
+      <p class="selectable-item">Item 3</p>
+    </div>
+    <h3>Accordion</h3>
+    <div id="accordion">
+      <h3>Section 1</h3>
+      <div>
+        <p>Content for Section 1</p>
+      </div>
+      <h3>Section 2</h3>
+      <div>
+        <p>Content for Section 2</p>
+      </div>
+      <h3>Section 3</h3>
+      <div>
+        <p>Content for Section 3</p>
+      </div>
+    </div>
+    <div id="slider"></div>
+
+    <!-- New box -->
+    <div class="new-box box">New Box</div>
+
+    <!-- Buttons -->
+    <button id="show-hide">Show/Hide</button>
+    <button id="explode">Explode</button>
+    <button id="fade-in">Fade In</button>
+    <button id="fade-out">Fade Out</button>
+    <button id="color-animation">Color Animation</button>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

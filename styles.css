@@ -1,0 +1,242 @@
+/* Global Styles */
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styles */
+.container {
+    margin: 20px auto;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px); /* Adds a subtle blur effect to the container */
+}
+
+/* Box Styles */
+.box, .new-box {
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin-bottom: 10px;
+}
+
+/* Droppable Area Styles */
+.droppable-area {
+    width: 200px;
+    height: 200px;
+    border: 2px dashed rgba(255, 255, 255, 0.7);
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Selectable Item Styles */
+.selectable-item {
+    cursor: pointer;
+}
+
+/* Selected Item Styles */
+.selected-item {
+    background-color: rgba(40, 167, 69, 0.5) !important;
+}
+
+/* Droppable Over Styles */
+.droppable-over, .droppable-dropped {
+    border-color: rgba(255, 255, 255, 1);
+}
+
+/* Search Container Styles */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Search Input Styles */
+.search-container input[type=text] {
+    width: calc(25% - 5px); /* Halving the width */
+    padding: 8px; /* Decreasing padding */
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+    background-image: url('searchicon.png');
+    background-size: 16px; /* Adjusting icon size */
+    background-position: 8px 50%; /* Adjusting icon position */
+    background-repeat: no-repeat;
+    padding-left: 32px; /* Adjusting left padding */
+    box-sizing: border-box;
+    font-size: 14px; /* Decreasing font size */
+    margin-bottom: 10px;
+}
+
+/* Autocomplete Dropdown Styles */
+.ui-autocomplete {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* Draggable Box Styles */
+.draggable-box {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0, 123, 255, 0.7); /* Acrylic background with reduced opacity */
+    color: white;
+    text-align: center;
+    line-height: 150px;
+    border-radius: 10px;
+    cursor: move;
+    position: absolute;
+    top: 30%;
+    left: calc(100% - 200px);
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+/* Droppable Dropped Styles */
+.droppable-dropped {
+    background-color: rgba(40, 167, 69, 0.5); /* Green background color */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+
+/* Resizable Box Styles */
+.resizable-box {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    text-align: center;
+    line-height: 100px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+/* Autocomplete Dropdown Item Styles */
+.ui-menu-item {
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Autocomplete Dropdown Item Hover Styles */
+.ui-menu-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Accordion Styles */
+#accordion {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+/* Accordion Header Styles */
+#accordion h3 {
+    background-color: rgba(111, 232, 137, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* Accordion Content Styles */
+#accordion div {
+    padding: 10px;
+}
+
+/* Remove search icon from datepicker input */
+#datepicker {
+    background-image: none; /* Remove the background image */
+    background-position: right center; /* Adjust background position if needed */
+    padding-right: 10px; /* Add some padding on the right to maintain spacing */
+}
+
+/* Datepicker dropdown styles */
+.ui-datepicker {
+    background-color: rgba(255, 255, 255, 0.8); /* Acrylic background with reduced opacity */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect for depth */
+    padding: 10px;
+    max-height: 200px; /* Max height for the datepicker */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+/* Datepicker header styles */
+.ui-datepicker-header {
+    background-color: rgba(111, 232, 137, 0.7); /* Adjusted color and opacity */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Datepicker calendar styles */
+.ui-datepicker-calendar {
+    background-color: rgba(255, 255, 255, 0.5); /* Acrylic background with reduced opacity */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Shadow effect for depth */
+}
+
+/* Datepicker calendar cell styles */
+.ui-datepicker-calendar th,
+.ui-datepicker-calendar td {
+    padding: 5px;
+    text-align: center;
+}
+
+/* Datepicker calendar cell hover styles */
+.ui-datepicker-calendar .ui-state-default:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Adjusted hover background color */
+}
+
+/* Button styles */
+button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background-color: rgba(111, 232, 137, 0.7); /* Adjusted color and opacity */
+    color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect for depth */
+    backdrop-filter: blur(5px); /* Adds a subtle blur effect */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: rgba(111, 232, 137, 1); /* Adjusted hover color */
+}
+
+/* Slider styles */
+#slider {
+    background-color: rgba(255, 255, 255, 0.8); /* Acrylic background with reduced opacity */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect for depth */
+    backdrop-filter: blur(5px); /* Adding blur for acrylic effect */
+    margin-bottom: 20px;
+    margin-top:10px;
+}
+
